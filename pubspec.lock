@@ -8,6 +8,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.2.0"
+  another_transformer_page_view:
+    dependency: "direct main"
+    description:
+      name: another_transformer_page_view
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
   async:
     dependency: transitive
     description:
@@ -189,13 +196,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.4.12"
-  transformer_page_view:
-    dependency: "direct main"
-    description:
-      name: transformer_page_view
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.1.6"
   typed_data:
     dependency: transitive
     description:
