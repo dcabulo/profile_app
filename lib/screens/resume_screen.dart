@@ -16,6 +16,8 @@ class ResumeScreen extends StatefulWidget {
 }
 
 class _ResumeScreenState extends State<ResumeScreen> {
+  var _currentIndex = constants.cStartingIndex;
+
   @override
   Widget build(BuildContext context) {
     DisplayScreen().init(context);
@@ -41,16 +43,39 @@ class _ResumeScreenState extends State<ResumeScreen> {
                 ),
               ),
               Expanded(
-                  child: Container(
-                child: Stack(children: [
-                  BackdropWidget(
-                      contentList: utils.contentList,
-                      resumeContentModel: utils.contentList[0]),
-                ]),
-              ))
+                child: Container(
+                  child: Stack(
+                    children: [
+                      BackdropWidget(
+                        contentList: utils.contentList,
+                        resumeContentModel: utils.contentList[_currentIndex],
+                      ),
+                      _buildResumePage()
+                    ],
+                  ),
+                ),
+              )
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildResumePage() {
+    return Container(
+      child: TransformerPageView(
+        itemCount: utils.contentList.length,
+        scrollDirection: Axis.vertical,
+        itemBuilder: (context, id) => ContentItemWidget(
+          contentList: utils.contentList,
+          resumeContentModel: utils.contentList[id],
+        ),
+        onPageChanged: ((currentId) {
+          setState(() {
+            _currentIndex = currentId!;
+          });
+        }),
       ),
     );
   }
