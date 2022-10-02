@@ -45,7 +45,7 @@ class BackdropWidget extends StatelessWidget {
                   child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Container(
+                  SizedBox(
                     width: resumeContentModel.iconWidth,
                     child: Image(
                       image: AssetImage(resumeContentModel.iconimage),
@@ -79,7 +79,7 @@ class BackdropWidget extends StatelessWidget {
                   const SizedBox(
                     width: 10,
                   ),
-                  Container(
+                  SizedBox(
                     width: 20,
                     height: 100,
                     child: Column(

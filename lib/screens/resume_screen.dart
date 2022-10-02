@@ -23,13 +23,13 @@ class _ResumeScreenState extends State<ResumeScreen> {
     DisplayScreen().init(context);
     return SafeArea(
       child: Scaffold(
-        body: Container(
+        body: SizedBox(
           width: double.infinity,
           height: double.infinity,
           child: Column(
             children: [
-              Container(
-                height: utils.displayHeight() * 0.18,
+              SizedBox(
+                height: utils.displayHeight() * 0.15,
                 child: Align(
                   alignment: Alignment.bottomCenter,
                   child: Text(
@@ -43,16 +43,14 @@ class _ResumeScreenState extends State<ResumeScreen> {
                 ),
               ),
               Expanded(
-                child: Container(
-                  child: Stack(
-                    children: [
-                      BackdropWidget(
-                        contentList: utils.contentList,
-                        resumeContentModel: utils.contentList[_currentIndex],
-                      ),
-                      _buildResumePage()
-                    ],
-                  ),
+                child: Stack(
+                  children: [
+                    BackdropWidget(
+                      contentList: utils.contentList,
+                      resumeContentModel: utils.contentList[_currentIndex],
+                    ),
+                    _buildResumePage()
+                  ],
                 ),
               )
             ],
@@ -63,20 +61,19 @@ class _ResumeScreenState extends State<ResumeScreen> {
   }
 
   Widget _buildResumePage() {
-    return Container(
-      child: TransformerPageView(
-        itemCount: utils.contentList.length,
-        scrollDirection: Axis.vertical,
-        itemBuilder: (context, id) => ContentItemWidget(
-          contentList: utils.contentList,
-          resumeContentModel: utils.contentList[id],
-        ),
-        onPageChanged: ((currentId) {
-          setState(() {
-            _currentIndex = currentId!;
-          });
-        }),
+    return TransformerPageView(
+      itemCount: utils.contentList.length,
+      scrollDirection: Axis.vertical,
+      transformer: ContentTransformer(),
+      itemBuilder: (context, id) => ContentItemWidget(
+        contentList: utils.contentList,
+        resumeContentModel: utils.contentList[id],
       ),
+      onPageChanged: ((currentId) {
+        setState(() {
+          _currentIndex = currentId!;
+        });
+      }),
     );
   }
 }

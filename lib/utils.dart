@@ -31,7 +31,8 @@ final List<ResumeContentModel> contentList = [
       displayWidth() * 0.30,
       42.0,
       displayHeight() * 0.05,
-      26.0),
+      26.0,
+      showSeparateLine: true),
   ResumeContentModel(
       constants.cExperienceTopic,
       constants.cExperienceFeature,

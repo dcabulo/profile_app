@@ -5,7 +5,7 @@ import 'package:sizer/sizer.dart';
 
 void main() {
   Paint.enableDithering = true;
-  WidgetsFlutterBinding.ensureInitialized;
+  WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(const MyApp());
 }

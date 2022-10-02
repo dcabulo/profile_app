@@ -20,7 +20,7 @@ const cProfileEndColor = Color(0xffB8A1DC);
 
 const cEducationTopic = 'Education Background';
 const cEducationFeature =
-    'Lorem ipsum dolor sit amet consectetur adipiscing, elit hendrerit sociis est justo aliquet platea, ad per sem lacinia himenaeos. Eros convallis integer ullamcorper maecenas vel nam, blandit enim habitasse quam.';
+    'Lorem ipsum dolor sit amet consectetur adipiscing, elit hendrerit.';
 const cEducationLabel = 'Education';
 const cEducationPicture = 'assets/images/book.png';
 const cEducationIconImage = 'assets/images/education.png';
