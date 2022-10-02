@@ -6,4 +6,4 @@ Profile app to share with everyone.
 
 In this app you can see my portafolio and some skills.
 
-Just run flutter run and enjoy it!
+Just run *flutter run* and enjoy it!
