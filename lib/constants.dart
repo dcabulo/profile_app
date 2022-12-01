@@ -8,7 +8,7 @@ const cTextLabelColor = Colors.white;
 // Detail for Profile item
 const cProfileTopic = 'About Me';
 const cProfileFeature =
-    'Lorem ipsum dolor sit amet consectetur adipiscing, elit hendrerit sociis est justo aliquet platea, ad per sem lacinia himenaeos. Eros convallis integer ullamcorper maecenas vel nam, blandit enim habitasse quam.';
+    'I have been working in software and web development since 2019, Im a fullstack stack developer and test automation engineer. I also like to learn about Python, JAVA and mobile development in flutter. ';
 const cProfileLabel = 'Profile';
 const cProfilePicture = 'assets/images/avatar.png';
 const cProfileIconImage = 'assets/images/profile.png';
@@ -20,7 +20,7 @@ const cProfileEndColor = Color(0xffB8A1DC);
 
 const cEducationTopic = 'Education Background';
 const cEducationFeature =
-    'Lorem ipsum dolor sit amet consectetur adipiscing, elit hendrerit.';
+    'Everything I know about mobile and web development I have studied on my own, I have an AWS cloud practicioner certificate.';
 const cEducationLabel = 'Education';
 const cEducationPicture = 'assets/images/book.png';
 const cEducationIconImage = 'assets/images/education.png';
@@ -32,7 +32,7 @@ const cEducationEndColor = Color(0xffF3DDB2);
 
 const cExperienceTopic = 'Experience Background';
 const cExperienceFeature =
-    'Lorem ipsum dolor sit amet consectetur adipiscing, elit hendrerit sociis est justo aliquet platea, ad per sem lacinia himenaeos. Eros convallis integer ullamcorper maecenas vel nam, blandit enim habitasse quam.';
+    'One year as a full stack developer and another year as a test automation engineer. Projects on my own as mobile applications developed in Flutter framework.';
 const cExperienceLabel = 'Experience';
 const cExperiencePicture = 'assets/images/laptop.png';
 const cExperienceIconImage = 'assets/images/experience.png';
